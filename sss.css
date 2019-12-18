@@ -1,0 +1,12 @@
+.w{
+  background:url(2017-12-27_01461.svg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 1112px;
+}
+
+nav{
+  color:red;
+}
