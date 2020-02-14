@@ -11,25 +11,87 @@
     <title>Site</title>
   </head>
   <body>
+
+    <!-- ШАПКА САЙТА (NAVBAR) -->
     <nav class="navbar navbar-expand-lg navbar-light ">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+      <!-- Меню -->
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="nav mr-auto ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Вход</a>
+            <a class="nav-link" data-toggle="modal" data-target="#linkLogin" href="#">Вход</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">О нас</a>
+            <a class="nav-link" id="linkAbout" href="#">О нас</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакты</a>
+          <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#linkContact">Контакты</a>
           </li>
         </ul>
       </div>
+      <!-- Конец меню -->
+      <!-- Модальное окно ВХОД -->
+      <div class="modal fade" id="linkLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="logEmail" placeholder="Электронная почта">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="logPass" placeholder="Пароль">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                      <input type="checkbox" class="custom-control-input" id="checkAlien">
+                      <label class="custom-control-label" for="checkAlien">Чужой компьютер</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-0 mr-8">Войти</button>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- Конец ВХОДа -->
+        <!-- Модальное окно КОНТАКТЫ -->
+        <div class="modal fade" id="linkContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <span><a href="https://vk.com/midorieisu" target="_blank"><img src="vk_icon-icons.com_66681.svg" alt="vk" width="40" height="40"/></a></span>
+                <span><a href ="https://www.instagram.com/hvrtlxrd/" target="_blank"><img src="2362135-instagram-photo-round-social_85523.svg" alt="insta" width="37" height="37"/></a></span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mt-0" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Конец КОНТАКТов -->
     </nav>
+
     <div id="header">
         <div class="d-flex align-items-end flex-column" style="height: 500px;">
             <div class="mt-auto mr-5 p-2">
@@ -37,39 +99,177 @@
             </div>
         </div>
         <button type="button" class="btn btn-primary rounded-pill ml-5" data-toggle="modal" data-target="#btRegist">Регистрация</button>
+
     </div>
     <div class="modal fade" id="btRegist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label" >Email</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail3">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inlineFormInputName2" placeholder="Введите свое имя">
+              </div>
             </div>
-          </div>
-          <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword3">
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Электронная почта">
+              </div>
             </div>
-          </div>
-          <button type="submit" class="btn btn-primary mt-0 mr-8">Зарегистрироваться</button>
-          <button type="button" class="btn btn-secondary mt-0" data-dismiss="modal">Закрыть</button>
-        </form>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <span>Пол:</span>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="radioWoman" name="gender" value="customEx">
+                  <label class="custom-control-label" for="radioWoman">Женский</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" class="custom-control-input" id="radioMan" name="gender" value="customEx">
+                  <label class="custom-control-label" for="radioMan">Мужской</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-3">
+                <select  class="form-control form-control-inline" id="selectDay">
+                  <option disabled selected>День</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <select  class="form-control form-control-inline" id="selectMonth">
+                  <option disabled selected>Месяц</option>
+                  <option>Январь</option>
+                  <option>Февраль</option>
+                  <option>Март</option>
+                  <option>Апрель</option>
+                  <option>Май</option>
+                  <option>Июнь</option>
+                  <option>Июль</option>
+                  <option>Август</option>
+                  <option>Сентябрь</option>
+                  <option>Октябрь</option>
+                  <option>Ноябрь</option>
+                  <option>Декабрь</option>
+                </select>
+              </div>
+              <div class="col-sm-3">
+                <select  class="form-control form-control-inline" id="selectMonth">
+                  <option disabled selected>Год</option>
+                  <option>2001</option>
+                  <option>2000</option>
+                  <option>1999</option>
+                  <option>1998</option>
+                  <option>1997</option>
+                  <option>1996</option>
+                  <option>1995</option>
+                  <option>1994</option>
+                  <option>1993</option>
+                  <option>1992</option>
+                  <option>1991</option>
+                  <option>1990</option>
+                  <option>1989</option>
+                  <option>1988</option>
+                  <option>1987</option>
+                  <option>1986</option>
+                  <option>1985</option>
+                  <option>1984</option>
+                  <option>1983</option>
+                  <option>1982</option>
+                  <option>1981</option>
+                  <option>1980</option>
+                  <option>1979</option>
+                  <option>1978</option>
+                  <option>1977</option>
+                  <option>1976</option>
+                  <option>1975</option>
+                  <option>1974</option>
+                  <option>1973</option>
+                  <option>1972</option>
+                  <option>1971</option>
+                  <option>1970</option>
+                  <option>1969</option>
+                  <option>1968</option>
+                  <option>1967</option>
+                  <option>1966</option>
+                  <option>1965</option>
+                  <option>1964</option>
+                  <option>1963</option>
+                  <option>1962</option>
+                  <option>1961</option>
+                  <option>1960</option>
+                  <option>1959</option>
+                  <option>1958</option>
+                  <option>1957</option>
+                  <option>1956</option>
+                  <option>1955</option>
+                  <option>1954</option>
+                  <option>1953</option>
+                  <option>1952</option>
+                  <option>1951</option>
+                  <option>1940</option>
+                  <option>1949</option>
+                  <option>1948</option>
+                  <option>1947</option>
+                  <option>1946</option>
+                  <option>1945</option>
+                  <option>1944</option>
+                  <option>1943</option>
+                  <option>1942</option>
+                  <option>1941</option>
+                  <option>1940</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-0 mr-8">Зарегистрироваться</button>
+          </form>
+        </div>
+        </div>
       </div>
-      
-    </div>
-  </div>
-</div>
-</div>
+      </div>
+
+
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
