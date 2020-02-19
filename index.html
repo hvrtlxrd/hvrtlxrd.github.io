@@ -118,7 +118,7 @@
         </div>
         <!-- Конец КОНТАКТов__________________________________________________________________________ -->
     </nav>
-
+    <!-- Просто надпись с кнопкой______________________ -->
     <div id="header">
             <div class="d-flex align-items-end flex-column" style="height: 500px;">
                 <div class="mt-auto mr-5 p-2">
@@ -127,185 +127,187 @@
             </div>
             <button type="button" class="btn btn-primary rounded-pill ml-5" data-toggle="modal" data-target="#btRegist">Регистрация</button>
 
-        </div>
+    </div>
+    <!-- Конец просто надписи с кнопкой__________________________________ -->
+    <!-- Форма регистрации __________________________________________________________________________________________________-->
     <div class="modal fade" id="btRegist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-          <form class="needs-validation " novalidate>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" placeholder="Введите свое имя" aria-describedby="inputGroupPrepend" required>
-                <div class="invalid-feedback">
-                  Пожалуйста введите свое имя.
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation " novalidate>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" placeholder="Введите свое имя" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Пожалуйста введите свое имя.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Электронная почта" required>
-                <div class="invalid-feedback">
-                  Пожалуйста введите свой email.
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="Электронная почта" required>
+                  <div class="invalid-feedback">
+                    Пожалуйста введите свой email.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" required>
-                <div class="invalid-feedback">
-                  Пожалуйста введите пароль.
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" required>
+                  <div class="invalid-feedback">
+                    Пожалуйста введите пароль.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-sm-10">
-                <span>Пол:</span>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="radioWoman" name="gender" value="customEx" required>
-                  <label class="custom-control-label" for="radioWoman">Женский</label>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                  <span>Пол:</span>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="radioWoman" name="gender" value="customEx" required>
+                    <label class="custom-control-label" for="radioWoman">Женский</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="radioMan" name="gender" value="customEx" required>
+                    <label class="custom-control-label" for="radioMan">Мужской</label>
+                  </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" class="custom-control-input" id="radioMan" name="gender" value="customEx" required>
-                  <label class="custom-control-label" for="radioMan">Мужской</label>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-3">
+                  <select  class=" custom-select form-control form-control-inline" id="selectDay" required>
+                    <option disabled selected value="">День</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                  </select>
+                </div>
+                <div class="col-sm-4">
+                  <select  class="custom-select form-control form-control-inline" id="selectMonth" required>
+                    <option disabled selected value="">Месяц</option>
+                    <option>Январь</option>
+                    <option>Февраль</option>
+                    <option>Март</option>
+                    <option>Апрель</option>
+                    <option>Май</option>
+                    <option>Июнь</option>
+                    <option>Июль</option>
+                    <option>Август</option>
+                    <option>Сентябрь</option>
+                    <option>Октябрь</option>
+                    <option>Ноябрь</option>
+                    <option>Декабрь</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select  class="custom-select form-control form-control-inline" id="selectYear" required>
+                    <option disabled selected value="">Год</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                    <option>1989</option>
+                    <option>1988</option>
+                    <option>1987</option>
+                    <option>1986</option>
+                    <option>1985</option>
+                    <option>1984</option>
+                    <option>1983</option>
+                    <option>1982</option>
+                    <option>1981</option>
+                    <option>1980</option>
+                    <option>1979</option>
+                    <option>1978</option>
+                    <option>1977</option>
+                    <option>1976</option>
+                    <option>1975</option>
+                    <option>1974</option>
+                    <option>1973</option>
+                    <option>1972</option>
+                    <option>1971</option>
+                    <option>1970</option>
+                    <option>1969</option>
+                    <option>1968</option>
+                    <option>1967</option>
+                    <option>1966</option>
+                    <option>1965</option>
+                    <option>1964</option>
+                    <option>1963</option>
+                    <option>1962</option>
+                    <option>1961</option>
+                    <option>1960</option>
+                    <option>1959</option>
+                    <option>1958</option>
+                    <option>1957</option>
+                    <option>1956</option>
+                    <option>1955</option>
+                    <option>1954</option>
+                    <option>1953</option>
+                    <option>1952</option>
+                    <option>1951</option>
+                    <option>1950</option>
+                    <option>1949</option>
+                    <option>1948</option>
+                    <option>1947</option>
+                    <option>1946</option>
+                    <option>1945</option>
+                    <option>1944</option>
+                    <option>1943</option>
+                    <option>1942</option>
+                    <option>1941</option>
+                    <option>1940</option>
+                  </select>
                 </div>
               </div>
-            </div>
-            <div class="form-group row">
-              <div class="col-sm-3">
-                <select  class=" custom-select form-control form-control-inline" id="selectDay" required>
-                  <option disabled selected value="">День</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
-                  <option>11</option>
-                  <option>12</option>
-                  <option>13</option>
-                  <option>14</option>
-                  <option>15</option>
-                  <option>16</option>
-                  <option>17</option>
-                  <option>18</option>
-                  <option>19</option>
-                  <option>20</option>
-                  <option>21</option>
-                  <option>22</option>
-                  <option>23</option>
-                  <option>24</option>
-                  <option>25</option>
-                  <option>26</option>
-                  <option>27</option>
-                  <option>28</option>
-                  <option>29</option>
-                  <option>30</option>
-                  <option>31</option>
-                </select>
-              </div>
-              <div class="col-sm-4">
-                <select  class="custom-select form-control form-control-inline" id="selectMonth" required>
-                  <option disabled selected value="">Месяц</option>
-                  <option>Январь</option>
-                  <option>Февраль</option>
-                  <option>Март</option>
-                  <option>Апрель</option>
-                  <option>Май</option>
-                  <option>Июнь</option>
-                  <option>Июль</option>
-                  <option>Август</option>
-                  <option>Сентябрь</option>
-                  <option>Октябрь</option>
-                  <option>Ноябрь</option>
-                  <option>Декабрь</option>
-                </select>
-              </div>
-              <div class="col-sm-3">
-                <select  class="custom-select form-control form-control-inline" id="selectYear" required>
-                  <option disabled selected value="">Год</option>
-                  <option>2001</option>
-                  <option>2000</option>
-                  <option>1999</option>
-                  <option>1998</option>
-                  <option>1997</option>
-                  <option>1996</option>
-                  <option>1995</option>
-                  <option>1994</option>
-                  <option>1993</option>
-                  <option>1992</option>
-                  <option>1991</option>
-                  <option>1990</option>
-                  <option>1989</option>
-                  <option>1988</option>
-                  <option>1987</option>
-                  <option>1986</option>
-                  <option>1985</option>
-                  <option>1984</option>
-                  <option>1983</option>
-                  <option>1982</option>
-                  <option>1981</option>
-                  <option>1980</option>
-                  <option>1979</option>
-                  <option>1978</option>
-                  <option>1977</option>
-                  <option>1976</option>
-                  <option>1975</option>
-                  <option>1974</option>
-                  <option>1973</option>
-                  <option>1972</option>
-                  <option>1971</option>
-                  <option>1970</option>
-                  <option>1969</option>
-                  <option>1968</option>
-                  <option>1967</option>
-                  <option>1966</option>
-                  <option>1965</option>
-                  <option>1964</option>
-                  <option>1963</option>
-                  <option>1962</option>
-                  <option>1961</option>
-                  <option>1960</option>
-                  <option>1959</option>
-                  <option>1958</option>
-                  <option>1957</option>
-                  <option>1956</option>
-                  <option>1955</option>
-                  <option>1954</option>
-                  <option>1953</option>
-                  <option>1952</option>
-                  <option>1951</option>
-                  <option>1940</option>
-                  <option>1949</option>
-                  <option>1948</option>
-                  <option>1947</option>
-                  <option>1946</option>
-                  <option>1945</option>
-                  <option>1944</option>
-                  <option>1943</option>
-                  <option>1942</option>
-                  <option>1941</option>
-                  <option>1940</option>
-                </select>
-              </div>
-            </div>
-            <button id="save" type="submit" class="btn  btn-primary mt-0 mr-8">Зарегистрироваться</button>
-          </form>
-        </div>
+              <button id="save" type="submit" class="btn  btn-primary mt-0 mr-8">Зарегистрироваться</button>
+            </form>
+          </div>
+          </div>
         </div>
       </div>
-      </div>
-
-
+    <!-- Конец формы с регистрацией_______________________________________________________________________________________________!-->
+    <!-- Скрипт проверки формы на ввод____________________________________________________________________________________________!-->
       <script>
         (function() {
           'use strict';
@@ -323,6 +325,7 @@
           }, false);
         })();
       </script>
+    <!-- Конец скрипта проверки формы на вводы____________________________________________________________________________________!-->
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
