@@ -16,8 +16,27 @@
 	margin-top: 78px;
 	font-family: 'Didact Gothic', sans-serif;
 	font-size: 2em;
+	margin-left: 1.9rem!important;
+}
+
+.span1{
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 18px;
+	position: relative; 
+	top: 25px;
+	right: 120px;
+	color: black;
 	
 }
+
+#text3{
+	margin-top: 78px;
+	font-family: 'Thasadith', sans-serif;
+	font-size: 4em;
+	color: #3987E1;
+	margin-left: 3rem!important;
+}
+
 
 #ellipse1{
 	margin-right: 17px;
