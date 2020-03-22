@@ -1,3 +1,7 @@
+body{
+  width: 1600px;
+}
+
 .w{
   background:url(2017-12-27_01461.svg) no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -19,31 +23,51 @@
 	margin-left: 1.9rem!important;
 }
 
-.span1{
-	font-family: 'Didact Gothic', sans-serif;
+#span1{
+  font-family: 'Thasadith', sans-serif;
+  font-size: 72px;
+  color: #3987E1;
+}
+
+#blokFind{
+  margin-top: 78px;
+}
+
+#span2{
+  font-family: 'TeX Gyre Adventor', arial;
 	font-size: 18px;
-	position: relative; 
-	top: 25px;
-	right: 120px;
 	color: black;
-	
+}
+
+#span3{
+  font-family: 'TeX Gyre Adventor', arial;
+	font-size: 40px;
+	color: black;
+}
+
+#blokFindRow2{
+  margin-top: 24px;
+}
+
+
+.span4{
+  position: relative;
+  left: 45px;
 }
 
 #text3{
 	margin-top: 78px;
-	font-family: 'Thasadith', sans-serif;
-	font-size: 4em;
-	color: #3987E1;
-	margin-left: 3rem!important;
+
+	margin-left: 1.9rem!important;
 }
 
 
 #ellipse1{
-	margin-right: 17px;
+	margin-right: 29px;
 }
 
 #ellipse2{
-	margin-left: 17px;
+	margin-left: 29px;
 }
 
 p.text-sm-right{
