@@ -1,374 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-		<link href="https://fonts.googleapis.com/css?family=Thasadith&display=swap" rel="stylesheet">
-  		<link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap&subset=cyrillic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="http://allfont.ru/allfont.css?fonts=tex-gyre-adventor" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" href="sss.css">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<title>Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <style>
+   @font-face {
+    font-family: Pompadur; /* Гарнитура шрифта */
+    src: url(nine0.ttf); /* Путь к файлу со шрифтом */
+   }
+   body {
+    font-family: Pompadur, 'Comic Sans MS', cursive;
+       font-size: 30px
+   }
+  </style>
+    <title>С днем Рождения :з</title>
   </head>
-  <body>
-    <!-- ШАПКА САЙТА (NAVBAR)__________________________________________________________________________ -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-haspopup="true" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Меню__________________________________________________________________________ -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav mr-auto ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#linkLogin" href="#">Вход</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="modal" data-target="#linkAbout" href="#">О нас</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="modal" data-target="#linkContact">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Конец меню__________________________________________________________________________ -->
-      <!-- Окно ВХОД__________________________________________________________________________ -->
-      <div class="modal fade" id="linkLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-              <form class="needs-validation" novalidate>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="logEmail" placeholder="Электронная почта" required>
-                    <div class="invalid-feedback">
-                      Пожалуйста введите email.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="logPass" placeholder="Пароль" required>
-                    <div class="invalid-feedback">
-                      Пожалуйста введите пароль.
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <div class="custom-control custom-checkbox mr-sm-2" id="checkboxAlien">
-                      <input type="checkbox" class="custom-control-input" id="checkAlien">
-                      <label class="custom-control-label" for="checkAlien">Чужой компьютер</label>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary mt-0 mr-8">Войти</button>
-              </form>
-            </div>
-            </div>
-          </div>
-        </div>
-        <!-- Конец ВХОДа_________________________________________________________________________ -->
-        <!-- Окно О нас__________________________________________________________________________ -->
-        <div class="modal fade" id="linkAbout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">О нас</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary mt-0" data-dismiss="modal">Закрыть</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Конец О нас__________________________________________________________________________ -->
-        <!-- Окно КОНТАКТЫ__________________________________________________________________________ -->
-        <div class="modal fade" id="linkContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Контакты</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <span><a href="https://vk.com/midorieisu" target="_blank"><img src="vk_icon-icons.com_66681.svg" alt="vk" width="40" height="40"/></a></span>
-                <span><a href ="https://www.instagram.com/hvrtlxrd/" target="_blank"><img src="2362135-instagram-photo-round-social_85523.svg" alt="insta" width="37" height="37"/></a></span>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary mt-0" data-dismiss="modal">Закрыть</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Конец КОНТАКТов__________________________________________________________________________ -->
-    </nav>
-    <!-- Просто надпись с кнопкой______________________ -->
-    <div id="header">
-            <div class="d-flex align-items-end flex-column" style="height: 500px;">
-                <div class="mt-auto mr-5 p-2">
-                  Найди свою любовь здесь
-                </div>
-            </div>
-            <button type="button" class="btn btn-primary rounded-pill ml-3" data-toggle="modal" data-target="#btRegist">Регистрация</button>
+  <body background="t.gif" style="color: #FF3379;">
+    <div class="container-fluid text-center">
+        <h1 style="font-size: 50px">С днем Рождениям моя девочка :з</h1>
     </div>
-    <!-- Конец просто надписи с кнопкой__________________________________ -->
-    <!-- Форма регистрации __________________________________________________________________________________________________-->
-    <div class="modal fade" id="btRegist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div class="d-flex justify-content-center mt-5">
+        <div class="card bg-transparent" style="width: 30rem; border: none;">
+          <img src="h.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text" >С днем рождения моя любимая девочка, в этот мой самый любимый день, я желаю тебе оставаться такой же красивой,
+милой, доброй и хорошей, чтобы ты смогла достичь всего-то что желаешь, и чтобы мы всегда были вместе и отмечали
+наши с тобой дни рождения. Я тебя очень сильно люблю, ты моя самая дорогая и любимая девочка, и я очень рад, что
+с тобой.</p>
           </div>
-          <div class="modal-body">
-            <form class="needs-validation " novalidate>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="inputName" placeholder="Введите свое имя" aria-describedby="inputGroupPrepend" required>
-                  <div class="invalid-feedback">
-                    Пожалуйста введите свое имя.
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Электронная почта" required>
-                  <div class="invalid-feedback">
-                    Пожалуйста введите свой email.
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" required>
-                  <div class="invalid-feedback">
-                    Пожалуйста введите пароль.
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <span>Пол:</span>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" id="radioWoman" name="gender" value="customEx" required>
-                    <label class="custom-control-label" for="radioWoman">Женский</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" class="custom-control-input" id="radioMan" name="gender" value="customEx" required>
-                    <label class="custom-control-label" for="radioMan">Мужской</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-3">
-                  <select  class=" custom-select form-control form-control-inline" id="selectDay" required>
-                    <option disabled selected value="">День</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                  </select>
-                </div>
-                <div class="col-sm-4">
-                  <select  class="custom-select form-control form-control-inline" id="selectMonth" required>
-                    <option disabled selected value="">Месяц</option>
-                    <option>Январь</option>
-                    <option>Февраль</option>
-                    <option>Март</option>
-                    <option>Апрель</option>
-                    <option>Май</option>
-                    <option>Июнь</option>
-                    <option>Июль</option>
-                    <option>Август</option>
-                    <option>Сентябрь</option>
-                    <option>Октябрь</option>
-                    <option>Ноябрь</option>
-                    <option>Декабрь</option>
-                  </select>
-                </div>
-                <div class="col-sm-3">
-                  <select  class="custom-select form-control form-control-inline" id="selectYear" required>
-                    <option disabled selected value="">Год</option>
-                    <option>2001</option>
-                    <option>2000</option>
-                    <option>1999</option>
-                    <option>1998</option>
-                    <option>1997</option>
-                    <option>1996</option>
-                    <option>1995</option>
-                    <option>1994</option>
-                    <option>1993</option>
-                    <option>1992</option>
-                    <option>1991</option>
-                    <option>1990</option>
-                    <option>1989</option>
-                    <option>1988</option>
-                    <option>1987</option>
-                    <option>1986</option>
-                    <option>1985</option>
-                    <option>1984</option>
-                    <option>1983</option>
-                    <option>1982</option>
-                    <option>1981</option>
-                    <option>1980</option>
-                    <option>1979</option>
-                    <option>1978</option>
-                    <option>1977</option>
-                    <option>1976</option>
-                    <option>1975</option>
-                    <option>1974</option>
-                    <option>1973</option>
-                    <option>1972</option>
-                    <option>1971</option>
-                    <option>1970</option>
-                    <option>1969</option>
-                    <option>1968</option>
-                    <option>1967</option>
-                    <option>1966</option>
-                    <option>1965</option>
-                    <option>1964</option>
-                    <option>1963</option>
-                    <option>1962</option>
-                    <option>1961</option>
-                    <option>1960</option>
-                    <option>1959</option>
-                    <option>1958</option>
-                    <option>1957</option>
-                    <option>1956</option>
-                    <option>1955</option>
-                    <option>1954</option>
-                    <option>1953</option>
-                    <option>1952</option>
-                    <option>1951</option>
-                    <option>1950</option>
-                    <option>1949</option>
-                    <option>1948</option>
-                    <option>1947</option>
-                    <option>1946</option>
-                    <option>1945</option>
-                    <option>1944</option>
-                    <option>1943</option>
-                    <option>1942</option>
-                    <option>1941</option>
-                    <option>1940</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                  <select class="custom-select" required>
-                    <option disabled selected value="">Город</option>
-                    <option value="Москва">Москва</option>
-                    <option value="Чебоксары">Чебоксары</option>
-                    <option value="Казань">Казань</option>
-                  </select>
-                </div>
-              </div>
-              <button id="save" type="submit" class="btn  btn-primary mt-0 mr-8">Зарегистрироваться</button>
-            </form>
-          </div>
-          </div>
-        </div>
-      </div>
-    <!-- Конец формы с регистрацией_______________________________________________________________________________________________!-->
-    <!-- Блок с поиском __________________________________________________________________________________________________________!-->
-    <div class="container-fluid" id="blokFind">
-      <div class="row justify-content-md-center mr-0" id="blokFindRow1">
-        <div class="col-md" align="center">
-          <span id="span3"><img src="Ellipse 3.svg" id="ellipse1"/>Только за сегодня<img src="Ellipse 3.svg" id="ellipse2"/></span>
-        </div>
-      </div>
-      <div class="row justify-content-md-center" id="blokFindRow2">
-        <div class="col-md-5" align="center" id="blokFindRow2Col1">
-          <span id="span1">10 000</span> <br /><span id="span2">людей в сети</span>
-        </div>
-        <div class="col-md-auto" align="center">
-          <span id="span1">32</span> <br /><span id="span2">нашли друг друга</span>
-        </div>
-        <div class="col-md-5" align="center" id="blokFindRow2Col2">
-          <span id="span1">5612</span> <br /><span id="span2">сообщений отправлено</span>
-        </div>
-      </div>
-    </div>
-    <div id="blokFindRow3">
-      <!--Картинка !-->
-    </div>
-    <div id="blokFindRow4">
-      <!--Картинка !-->
-    </div>
-	<!--Конец блока с поиском ____________________________________________________________________________________________________!-->
-    <!-- Скрипт проверки формы на ввод____________________________________________________________________________________________!-->
-      <script>
-        (function() {
-          'use strict';
-          window.addEventListener('load', function() {
-            var forms = document.getElementsByClassName('needs-validation');
-            var validation = Array.prototype.filter.call(forms, function(form) {
-              form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                }
-              form.classList.add('was-validated');
-              }, false);
-            });
-          }, false);
-        })();
-      </script>
-    <!-- Конец скрипта проверки формы на вводы____________________________________________________________________________________!-->
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"> </script>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"> </script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"> </script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"> </script>
+        </div>        
+    </div>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
   </body>
 </html>
